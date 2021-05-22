@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="3dp"
+    android:clickable="true"
+
+    android:focusable="true"
+    android:background="@drawable/background_rcvitem"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+    </TextView>
+    <TextView
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:layout_weight="0.5"
+        android:id="@+id/txtPlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </TextView>
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/imgEdit"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_edit">
+        </ImageView>
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/imgDelete"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_remove">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
